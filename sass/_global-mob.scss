@@ -1,0 +1,42 @@
+html {
+  font-family: "Raleway", sans-serif;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  height: 100%;
+}
+
+.adaptation__container {
+  max-width: none;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+.adaptation__wrapper {
+  display: flex;
+  flex: 1 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+.adaptation__footer-container {
+  max-width: none;
+  padding: 0 8px;
+  margin: 0 auto;
+}
+
+.adaptation__main {
+  flex: 1 1 auto;
+  background-color: $lightgrey;
+}
+
+.adaptation__main-section-content {
+  padding-top: 16px;
+  padding-left: 0;
+  color: $primary-color;
+  width: 100%;
+}

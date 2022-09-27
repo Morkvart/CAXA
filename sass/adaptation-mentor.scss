@@ -1,0 +1,930 @@
+@import "reset";
+@import "vars";
+@import "global";
+@import "blocks/adaptation-header";
+@import "blocks/adaptation-sidebar";
+@import "blocks/adaptation-footer";
+@import "blocks/popup";
+
+.adaptation__mentor {
+  overflow: hidden;
+
+  .mentor__title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+
+  .mentor__subtitle {
+    max-width: 875px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  // профиль ментора
+  .mentor__mentor-block {
+    margin-top: 24px;
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+    .mentor-block__mentor-profile {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 32px 33px 43px 33px;
+      max-width: 330px;
+      margin-right: 20px;
+      margin-bottom: 16px;
+      height: 100%;
+      .mentor-profile__photo {
+        max-width: 170px;
+        max-height: 170px;
+        margin: 0 auto 30px;
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+      }
+
+      .mentor-profile__fio {
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 17px;
+      }
+
+      .mentor-profile__jobtitle {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 150%;
+        text-align: center;
+        color: $dark;
+        margin-bottom: 16px;
+      }
+
+      .mentor-profile__birthday {
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+        color: $dark;
+        line-height: 180%;
+        margin-bottom: 2px;
+        font-feature-settings: "pnum" on, "lnum" on;
+      }
+
+      .mentor-profile__email {
+        font-size: 14px;
+        font-weight: 500;
+        color: $blue;
+        display: block;
+        text-align: center;
+        line-height: 180%;
+        margin-bottom: 11px;
+      }
+
+      .mentor-profile__social-links {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 21px;
+        .mentor-profile__social-link {
+          margin-right: 16px;
+          &:last-child {
+            margin-right: 0;
+          }
+          img {
+            display: block;
+            width: 33px;
+            height: 33px;
+          }
+        }
+      }
+
+      .mentor-profile__inputs {
+        .mentor-profile__delete-from-team-btn {
+          display: inline-block;
+          text-align: center;
+          font-size: 14px;
+          font-weight: 600;
+          letter-spacing: 0.1em;
+          color: $blue;
+          text-transform: uppercase;
+          border: 1px solid $blue;
+          border-radius: 4px;
+          background-color: #fff;
+          width: 100%;
+          padding: 16px 0;
+          margin-bottom: 16px;
+          transition: background-color 0.3s;
+          &:hover {
+            background-color: rgba($color: $lightblue, $alpha: 1);
+          }
+        }
+        .mentor-profile__add-student-btn {
+          display: inline-block;
+          text-align: center;
+          font-size: 14px;
+          font-weight: 600;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: #fff;
+          background-color: $blue;
+          width: 100%;
+          padding: 17px 0;
+          border-radius: 3px;
+          transition: background-color 0.3s;
+          &:hover {
+            background-color: rgba($color: $blue, $alpha: 0.8);
+          }
+        }
+      }
+    }
+  }
+
+  //информация о менторе
+  //обучение
+  .mentor-block__mentor-info {
+    width: 100%;
+    overflow: hidden;
+    .mentor-info__education {
+      padding: 28px 36px 88px 40px;
+      background-color: #fff;
+      border-radius: 10px;
+
+      .education__title {
+        font-weight: 700;
+        font-size: 24px;
+      }
+      .education__content {
+        margin-top: 41px;
+        max-width: 1062px;
+        padding-bottom: 18px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        background: #f1f7ff;
+        border: 1px solid #c1cfeb;
+        border-radius: 10px;
+        padding-left: 33px;
+        padding-right: 49px;
+
+        .content__progress {
+          display: flex;
+          margin-top: 20px;
+          margin-right: 5px;
+          .progress__container {
+            display: flex;
+            flex-direction: column;
+            margin-right: 55px;
+            .procent {
+              font-size: 20px;
+              font-weight: 700;
+              color: $blue;
+              text-align: center;
+              margin-bottom: 7px;
+              font-feature-settings: "pnum" on, "lnum" on;
+            }
+            .status {
+              font-size: 14px;
+              font-weight: 500;
+              white-space: nowrap;
+            }
+          }
+
+          .progress__status {
+            font-weight: 600;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+          }
+        }
+
+        .content__data {
+          display: flex;
+          align-items: center;
+          margin-top: 20px;
+          .data__img {
+            padding: 12px;
+            background-color: #fff;
+            border-radius: 10px;
+            margin-right: 17px;
+            img {
+              display: block;
+              width: 25px;
+              height: 25px;
+            }
+          }
+          span {
+            font-weight: 700;
+            font-size: 16px;
+            font-feature-settings: "pnum" on, "lnum" on;
+          }
+        }
+      }
+    }
+
+    //курсы
+    .mentor-info__courses {
+      margin-top: 41px;
+      overflow-x: hidden;
+
+      .courses__title {
+        margin-bottom: 26px;
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      .courses__table {
+        overflow-x: auto;
+        max-width: 1026px;
+        margin-right: 120px;
+        table {
+          border-spacing: 0 10px;
+          table-layout: fixed;
+          max-width: 100%;
+
+          .thead {
+            background-color: #fff;
+            height: 115px;
+            .thead-tr-th {
+              font-size: 14px;
+              font-weight: 700;
+              &:nth-child(1) {
+                border-radius: 10px 0 0 10px;
+
+                .thead-tr-th-div {
+                  min-width: 282px;
+                  max-width: 282px;
+                  padding-left: 35px;
+                  padding-right: 20px;
+                  text-align: left;
+                }
+              }
+              &:nth-child(2) {
+                text-align: left;
+                .thead-tr-th-div {
+                  min-width: 135px;
+                  max-width: 135px;
+                }
+              }
+              &:nth-child(3) {
+                text-align: left;
+                min-width: 135px;
+                width: 100%;
+                padding-left: 67px;
+              }
+              &:nth-child(4) {
+                text-align: left;
+                border-radius: 0 10px 10px 0;
+
+                .thead-tr-th-div {
+                  padding-right: 42px;
+
+                  min-width: 160px;
+                  max-width: 160px;
+                }
+              }
+            }
+          }
+
+          .tbody {
+            .tbody-tr {
+              background-color: #fff;
+
+              .tbody-tr-td {
+                font-size: 14px;
+                font-weight: 500;
+                padding-left: 10px;
+                &:nth-child(1) {
+                  color: $blue;
+                  padding: 33px 25px 33px 35px;
+                  border-radius: 10px 0 0 10px;
+                }
+                &:nth-child(2) {
+                  text-align: left;
+                  padding-left: 0;
+                  font-feature-settings: "pnum" on, "lnum" on;
+                }
+                &:nth-child(3) {
+                  padding-left: 67px;
+                  font-feature-settings: "pnum" on, "lnum" on;
+                }
+                &:nth-child(4) {
+                  border-radius: 0 10px 10px 0;
+                  font-feature-settings: "pnum" on, "lnum" on;
+                  padding-left: 0;
+                  .tbody-tr-td-div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    .procent {
+                      font-weight: 700;
+                      font-size: 20px;
+                      margin-bottom: 9px;
+                    }
+                    .procent-green {
+                      color: #27ae60;
+                    }
+                    .procent-blue {
+                      color: $blue;
+                    }
+                    .procent-red {
+                      color: #ff5b15;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //список учеников
+  .mentor__students {
+    margin-top: 45px;
+    .students__title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 35px;
+    }
+    .student__table {
+      overflow-x: auto;
+      margin-bottom: 50px;
+      .table {
+        border-spacing: 0 10px;
+        table-layout: fixed;
+        min-width: 100%;
+
+        .thead {
+          background-color: #fff;
+          height: 115px;
+          .thead-tr-th {
+            font-size: 14px;
+            font-weight: 700;
+            text-align: left;
+            padding-left: 15px;
+            cursor: pointer;
+            &:nth-child(1) {
+              border-radius: 10px 0 0 10px;
+              // min-width: 207px;
+              // width: 207px;
+              padding-left: 34px;
+              min-width: 140px;
+              // max-width: 100%;
+
+              position: sticky;
+              left: 0;
+              background-color: #fff;
+            }
+            &:nth-child(2) {
+              // min-width: 179px;
+              // width: 179px;
+              min-width: 137px;
+              // max-width: 100%;
+            }
+            &:nth-child(3) {
+              // min-width: 181px;
+              // width: 181px;
+              min-width: 157px;
+              // max-width: 100%;
+            }
+            &:nth-child(4) {
+              // min-width: 135px;
+              // width: 135px;
+              min-width: 103px;
+              // max-width: 100%;
+            }
+            &:nth-child(5) {
+              // min-width: 186px;
+              // width: 186px;
+              min-width: 130px;
+              // max-width: 100%;
+            }
+            &:nth-child(6) {
+              // min-width: 142px;
+              // width: 142px;
+              min-width: 106px;
+              // max-width: 100%;
+            }
+            &:nth-child(7) {
+              // min-width: 192px;
+              // width: 192px;
+              min-width: 139px;
+              // max-width: 100%;
+            }
+            &:nth-child(8) {
+              // min-width: 260px;
+              // width: 260px;
+              min-width: 158px;
+              // max-width: 100%;
+              border-radius: 0 10px 10px 0;
+            }
+          }
+        }
+
+        .tbody {
+          .tbody-tr {
+            background-color: #fff;
+            .tbody-tr-td {
+              font-size: 14px;
+              font-weight: 500;
+              // height: 100%;
+              height: 112px;
+              padding-left: 15px;
+              &:nth-child(1) {
+                padding-left: 34px;
+                border-radius: 10px 0 0 10px;
+                color: $blue;
+                position: sticky;
+                left: 0;
+                background-color: #fff;
+              }
+              &:nth-child(5) {
+                font-feature-settings: "pnum" on, "lnum" on;
+              }
+              &:nth-child(7) {
+                font-feature-settings: "pnum" on, "lnum" on;
+              }
+              &:nth-child(8) {
+                color: $blue;
+                text-decoration: underline;
+                border-radius: 0 10px 10px 0;
+              }
+              .steps,
+              .educ {
+                display: flex;
+                flex-direction: column;
+                .steps__procent,
+                .educ__procent {
+                  margin-bottom: 9px;
+                  font-size: 20px;
+                  font-weight: 700;
+                  font-feature-settings: "pnum" on, "lnum" on;
+                }
+                .procent-green {
+                  color: #27ae60;
+                }
+                .procent-blue {
+                  color: $blue;
+                }
+                .procent-red {
+                  color: #ff5b15;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //форма удаления ментора
+
+  .mentors__delete-mentor-form {
+    background-color: #fff;
+    max-width: 594px;
+    padding: 15px 32px 42px;
+    border-radius: 10px;
+    box-shadow: 0px 50px 50px -40px rgba(31, 53, 83, 0.5);
+
+    .delete-mentor-form__close-form-btn {
+      background-image: url("../images/icons/closeform.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 12px 12px;
+      width: 12px;
+      height: 12px;
+      background-color: #fff;
+      display: block;
+      margin-left: auto;
+      cursor: pointer;
+      margin-right: -5px;
+    }
+
+    .delete-mentor-form__title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .delete-mentor-form__subtitle {
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+
+    .delete-mentor-form__comment {
+      width: 100%;
+      resize: none;
+      height: 100px;
+      background: #f8f8f8;
+      border-radius: 3px;
+      color: $dark;
+      padding: 16px 16px 16px 20px;
+      margin-bottom: 16px;
+      font-size: 14px;
+    }
+
+    .delete-mentor-form__inputs {
+      .inputs__cancel-btn {
+        font-size: 14px;
+        background: #f4f5f8;
+        border-radius: 3px;
+        color: $blue;
+        text-transform: uppercase;
+        padding: 16px 42px;
+        cursor: pointer;
+        margin-right: 16px;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        &:hover {
+          background-color: rgba($color: #f4f5f8, $alpha: 0.8);
+        }
+      }
+      .inputs__delete-btn {
+        font-size: 14px;
+        background: #eb5757;
+        border-radius: 3px;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 16px 42px;
+        cursor: pointer;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        &:hover {
+          background-color: rgba($color: #eb5757, $alpha: 0.8);
+        }
+      }
+    }
+  }
+
+  // форма добавления учеников
+  .mentors__add-students-form {
+    padding: 15px 40px 61px 40px;
+
+    max-width: 1130px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 50px 50px -40px rgba(31, 53, 83, 0.5);
+    border-radius: 10px;
+
+    .add-students-form__close-form-btn {
+      background-image: url("../images/icons/closeform.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 12px 12px;
+      width: 12px;
+      height: 12px;
+      background-color: #fff;
+      display: block;
+      margin-right: 0;
+      margin-left: auto;
+      margin-right: -17px;
+      cursor: pointer;
+    }
+
+    .add-students-form__title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 21px;
+    }
+
+    .add-students-form__inputs {
+      margin-bottom: 24px;
+      .inputs__elem {
+        height: 50px;
+      }
+
+      .inputs__search-student-input {
+        display: flex;
+        margin-bottom: 16px;
+
+        width: 100%;
+        .search-field {
+          letter-spacing: 0.1em;
+          font-size: 14px;
+          font-weight: 600;
+          padding-left: 18px;
+          padding-right: 30px;
+          color: $dark;
+          width: 100%;
+          height: 100%;
+          background-color: #f8f8f8;
+
+          border-radius: 3px;
+
+          background-image: url("../images/icons/search.svg");
+          background-repeat: no-repeat;
+          background-position-x: calc(100% - 8px);
+          background-position-y: center;
+          background-size: 20px 20px;
+          &::-webkit-search-cancel-button {
+            display: none;
+          }
+
+          max-width: 873px;
+          margin-right: 8px;
+        }
+
+        .inputs__search-student-btn {
+          letter-spacing: 0.1em;
+          color: #fff;
+          background-color: $blue;
+          margin-bottom: 16px;
+          border-radius: 3px;
+          padding: 16px 56px;
+          font-size: 14px;
+          font-weight: 600;
+          text-transform: uppercase;
+          cursor: pointer;
+          &:hover {
+            background-color: rgba($color: $blue, $alpha: 0.8);
+          }
+        }
+      }
+
+      .inputs__selects-row {
+        display: flex;
+        .inputs__select-subdivision {
+          max-width: 460px;
+          width: 100%;
+          margin-right: 16px;
+
+          background: #f8f8f8;
+          border-radius: 3px;
+          outline: none;
+          border: none;
+          letter-spacing: 0.1em;
+          padding-left: 18px;
+          padding-right: 21px;
+          font-size: 14px;
+          letter-spacing: 0.1em;
+          font-weight: 600;
+          text-transform: uppercase;
+          margin-bottom: 16px;
+
+          background-image: url("../images/icons/arrow-select.svg");
+          background-repeat: no-repeat;
+          background-position-x: calc(100% - 16px);
+          background-position-y: center;
+          background-size: 15px 7px;
+          appearance: none;
+        }
+
+        .inputs__select-jobtitle {
+          max-width: 574px;
+          width: 100%;
+
+          background: #f8f8f8;
+          border-radius: 3px;
+          outline: none;
+          border: none;
+          letter-spacing: 0.1em;
+          padding-left: 18px;
+          font-size: 14px;
+          letter-spacing: 0.1em;
+          font-weight: 600;
+          text-transform: uppercase;
+          margin-bottom: 16px;
+
+          background-image: url("../images/icons/arrow-select.svg");
+          background-repeat: no-repeat;
+          background-position-x: calc(100% - 16px);
+          background-position-y: center;
+          background-size: 15px 7px;
+          appearance: none;
+        }
+      }
+
+      .inputs__select-mentor {
+        max-width: 1050px;
+        width: 100%;
+
+        background: #f8f8f8;
+        border-radius: 3px;
+        outline: none;
+        border: none;
+        letter-spacing: 0.1em;
+        padding-left: 18px;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        background-image: url("../images/icons/arrow-select.svg");
+        background-repeat: no-repeat;
+        background-position-x: calc(100% - 16px);
+        background-position-y: center;
+        background-size: 15px 7px;
+        appearance: none;
+      }
+    }
+
+    .add-students-form__students-container {
+      .students-container__selected-panel {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 12px;
+
+        .selected-container__select-all-checkbox {
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
+          .custom-checkbox {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+          }
+
+          .custom-checkbox + label {
+            display: inline-flex;
+            align-items: center;
+            user-select: none;
+          }
+
+          .custom-checkbox + label::before {
+            content: "";
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+            flex-grow: 0;
+            border: 1px solid $blue;
+            margin-right: 16px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 50% 50%;
+          }
+
+          .custom-checkbox:checked + label::before {
+            border-color: #0b76ef;
+            background-color: #fff;
+            background-image: url("../images/icons/checkbox.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 16px 16px;
+          }
+
+          .select-all {
+            font-size: 14px;
+            font-weight: 600;
+            color: $blue;
+            cursor: pointer;
+          }
+          .clear-all {
+            font-size: 14px;
+            font-weight: 600;
+            color: #86909e;
+            margin-left: 33px;
+            cursor: pointer;
+          }
+        }
+
+        .selected-panel__appoint-off-btn {
+          background-color: #fff;
+          cursor: pointer;
+          font-size: 14px;
+          color: #eb5757;
+          font-weight: 600;
+          margin-bottom: 20px;
+        }
+      }
+
+      .students-container__students-table {
+        overflow-x: auto;
+        table {
+          border-collapse: collapse;
+          width: 100%;
+          table-layout: fixed;
+          .thead {
+            margin-bottom: 40px;
+            background-color: #f8f8f8;
+            height: 50px;
+            margin-bottom: 39px;
+            .thead-tr-th {
+              font-size: 14px;
+              font-weight: 700;
+
+              cursor: pointer;
+
+              &:nth-child(1) {
+                width: 330px;
+                border-radius: 10px 0 0 10px;
+              }
+              &:nth-child(2) {
+                width: 255px;
+                padding-left: 10px;
+                text-align: left;
+              }
+              &:nth-child(3) {
+                width: 195px;
+                padding-left: 10px;
+                text-align: left;
+              }
+              &:last-child {
+                border-radius: 0 10px 10px 0;
+              }
+            }
+          }
+
+          .tbody {
+            &::before {
+              content: "@";
+              display: block;
+              line-height: 39px;
+              text-indent: -99999px;
+            }
+            td {
+              width: 200px;
+            }
+            .tbody-tr {
+              width: 100%;
+
+              .tbody-tr-td {
+                font-size: 14px;
+                font-weight: 600;
+                text-align: left;
+                padding-bottom: 16px;
+
+                .custom-checkbox {
+                  position: absolute;
+                  z-index: -1;
+                  opacity: 0;
+                }
+
+                .custom-checkbox + label {
+                  display: inline-flex;
+                  align-items: center;
+                  user-select: none;
+                }
+
+                .custom-checkbox + label::before {
+                  content: "";
+                  display: inline-block;
+                  width: 24px;
+                  height: 24px;
+                  flex-shrink: 0;
+                  flex-grow: 0;
+                  border: 1px solid $blue;
+                  margin-right: 20px;
+                  background-repeat: no-repeat;
+                  background-position: center center;
+                }
+
+                .custom-checkbox:checked + label::before {
+                  border-color: #0b76ef;
+                  background-color: #fff;
+                  background-image: url("../images/icons/checkbox.svg");
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: 16px 16px;
+                }
+
+                label {
+                  display: inline-flex;
+                  align-items: center;
+                  cursor: pointer;
+
+                  img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    display: block;
+                    margin-right: 30px;
+                  }
+                  span {
+                    max-width: 140px;
+                    font-size: 14px;
+                    font-weight: 600;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .add-students-form__save-btn {
+      height: 50px;
+      color: #fff;
+      background-color: $blue;
+      border-radius: 3px;
+      width: 100%;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      margin-top: 39px;
+      cursor: pointer;
+      &:hover {
+        background-color: rgba($color: $blue, $alpha: 0.8);
+      }
+    }
+  }
+}

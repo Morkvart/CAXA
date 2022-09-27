@@ -1,0 +1,1335 @@
+@media (max-width: 1600px) {
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  outline: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Regular.eot");
+  src: local("☺"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Medium.eot");
+  src: local("☺"), url("../fonts/Raleway-Medium.woff") format("woff"), url("../fonts/Raleway-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-SemiBold.eot");
+  src: local("☺"), url("../fonts/Raleway-SemiBold.woff") format("woff"), url("../fonts/Raleway-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Bold.eot");
+  src: local("☺"), url("../fonts/Raleway-Bold.woff") format("woff"), url("../fonts/Raleway-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+html {
+  font-family: "Raleway", sans-serif;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  height: 100%;
+}
+
+.adaptation__container {
+  max-width: 116.125vw;
+  margin: 0 auto;
+  padding: 0 0.5vw;
+}
+
+.adaptation__wrapper {
+  display: flex;
+  flex: 1 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+.adaptation__footer-container {
+  max-width: 74.125vw;
+  padding: 0 0.5vw;
+  margin: 0 auto;
+}
+
+.adaptation__main {
+  flex: 1 1 auto;
+  background-color: #f4f5f8;
+}
+
+.adaptation__main-section-content {
+  padding-top: 3.75vw;
+  padding-left: 5vw;
+  color: #1f3553;
+  width: 100%;
+}
+
+.adaptation__header-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.375vw;
+  color: #1f3553;
+}
+.adaptation__header-content .header-content__logo {
+  z-index: 10;
+  min-width: 9.1875vw;
+  height: 2.8125vw;
+}
+.adaptation__header-content .header-content__logo::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 18vw;
+  width: 1px;
+  background-color: #e6e1ea;
+}
+.adaptation__header-content .header-content__logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.adaptation__header-content .header-content__menu .menu__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.adaptation__header-content .header-content__menu .menu__navigation .navigation__list {
+  display: flex;
+  margin-right: 8.1875vw;
+  margin-left: auto;
+  font-family: "Arial", sans-serif;
+  font-size: 1vw;
+  font-weight: 700;
+}
+.adaptation__header-content .header-content__menu .menu__navigation .navigation__list li {
+  margin-right: 2.5vw;
+}
+.adaptation__header-content .header-content__menu .menu__navigation .navigation__list li:last-child {
+  margin-right: 0;
+}
+.adaptation__header-content .header-content__menu .menu__navigation .navigation__list li a {
+  transition: color 0.3s;
+}
+.adaptation__header-content .header-content__menu .menu__navigation .navigation__list li a:hover {
+  color: #2f87ff;
+}
+.adaptation__header-content .header-content__menu .menu__navigation .navigation__org-mail-block {
+  display: flex;
+}
+.adaptation__header-content .header-content__menu .menu__navigation .navigation__org-mail-block .navigation__organization {
+  display: flex;
+  align-items: center;
+  font-size: 1.125vw;
+  font-weight: 600;
+  margin-right: 2.5vw;
+}
+.adaptation__header-content .header-content__menu .menu__navigation .navigation__org-mail-block .navigation__organization img {
+  width: 1vw;
+  height: 1vw;
+  margin-right: 0.5vw;
+}
+.adaptation__header-content .header-content__menu .menu__navigation .navigation__org-mail-block .navigation__organization a {
+  transition: color 0.3s;
+}
+.adaptation__header-content .header-content__menu .menu__navigation .navigation__org-mail-block .navigation__organization a:hover {
+  color: #2f87ff;
+}
+.adaptation__header-content .header-content__menu .menu__navigation .navigation__org-mail-block .navigation__mail {
+  display: block;
+  min-width: 1.8125vw;
+  height: 1.25vw;
+  margin-right: 7.9375vw;
+}
+.adaptation__header-content .header-content__menu .menu__navigation .navigation__org-mail-block .navigation__mail img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.adaptation__header-content .header-content__menu .menu__navigation .navigation__logout-btn {
+  font-size: 1vw;
+  display: inline-block;
+  padding: 0.5vw 0 0.5vw;
+  text-align: center;
+  border-radius: 0.25vw;
+  font-weight: 500;
+  width: 7.125vw;
+  height: 2.1875vw;
+  background-color: #edf5ff;
+  color: #2f87ff;
+  transition: background-color 0.3s;
+}
+.adaptation__header-content .header-content__menu .menu__navigation .navigation__logout-btn:hover {
+  background-color: rgba(237, 245, 255, 0.8);
+}
+.adaptation__header-content .header-content__user {
+  position: absolute;
+  right: 10.8125vw;
+  z-index: 10;
+}
+.adaptation__header-content .header-content__user a {
+  display: flex;
+  align-items: center;
+}
+.adaptation__header-content .header-content__user a .user__avatar {
+  width: 2.125vw;
+  height: 2.125vw;
+  position: relative;
+}
+.adaptation__header-content .header-content__user a .user__avatar img {
+  border-radius: 50%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.adaptation__header-content .header-content__user a .user__avatar::after {
+  content: "";
+  display: block;
+  width: 1.125vw;
+  height: 100%;
+  background-image: url("/images/icons/arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 0.9375vw 0.4375vw;
+  top: 0;
+  left: 100%;
+  position: absolute;
+  padding-left: 0.375vw;
+}
+
+#menu-toggler {
+  display: none;
+}
+
+#menu-toggler:checked + .hamburger span {
+  transition: all 0.3s;
+  transform: rotate(45deg);
+  top: 0.5vw;
+}
+
+#menu-toggler:checked + .hamburger span::after {
+  transition: all 0.3s;
+  transform: rotate(-90deg);
+  top: 0;
+}
+
+#menu-toggler:checked + .hamburger span::before {
+  opacity: 0;
+}
+
+.hamburger {
+  display: none;
+  width: 1.5vw;
+  height: 1vw;
+  position: absolute;
+  cursor: pointer;
+}
+
+.hamburger span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 22;
+  display: block;
+  background-color: #1f3553;
+  width: 1.5vw;
+  height: 1px;
+  border-radius: 0.625vw;
+}
+
+.hamburger span::before {
+  position: absolute;
+  content: "";
+  width: 1.5vw;
+  height: 1px;
+  top: 0.5vw;
+  background-color: #1f3553;
+  border-radius: 0.625vw;
+}
+
+.hamburger span::after {
+  position: absolute;
+  content: "";
+  width: 1.5vw;
+  height: 1px;
+  top: 1vw;
+  background-color: #1f3553;
+  border-radius: 0.625vw;
+}
+
+.adaptation__sidebar,
+.adaptation__sidebar-header {
+  display: block;
+  height: 100%;
+  background-color: #fff;
+  padding-top: 5vw;
+  min-width: 18.0625vw;
+  color: #1f3553;
+  border-right: 1px solid #e6e1ea;
+  padding-left: 0.5vw;
+}
+.adaptation__sidebar .sidebar__links .sidebar__link,
+.adaptation__sidebar-header .sidebar__links .sidebar__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0.4375vw 0;
+  font-weight: 500;
+  font-size: 1.125vw;
+  border-radius: 0.25vw 0px 0px 0.25vw;
+}
+.adaptation__sidebar .sidebar__links .sidebar__link .sidebar__link-img,
+.adaptation__sidebar-header .sidebar__links .sidebar__link .sidebar__link-img {
+  width: 1.5vw;
+  height: 1.5vw;
+  margin-right: 1.0625vw;
+}
+.adaptation__sidebar .sidebar__links .sidebar__link .sidebar__link-img img,
+.adaptation__sidebar-header .sidebar__links .sidebar__link .sidebar__link-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.adaptation__sidebar .sidebar__links .sidebar__link:hover,
+.adaptation__sidebar-header .sidebar__links .sidebar__link:hover {
+  background-color: #edf5ff;
+  padding-left: 0.6875vw;
+  transition: padding 0.5s, background-color 0.5s, after 3s;
+  font-weight: 700;
+}
+.adaptation__sidebar .sidebar__links .sidebar__link:hover::after,
+.adaptation__sidebar-header .sidebar__links .sidebar__link:hover::after {
+  content: "";
+  display: block;
+  width: 0.375vw;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #2f87ff;
+  border-radius: 0.625vw 0 0 0.375vw;
+}
+.adaptation__sidebar .sidebar__links .sidebar__link_active,
+.adaptation__sidebar-header .sidebar__links .sidebar__link_active {
+  background-color: #edf5ff;
+  padding-left: 0.6875vw;
+  font-weight: 700;
+}
+.adaptation__sidebar .sidebar__links .sidebar__link_active::after,
+.adaptation__sidebar-header .sidebar__links .sidebar__link_active::after {
+  content: "";
+  display: block;
+  width: 0.375vw;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #2f87ff;
+  border-radius: 0.625vw 0 0 0.375vw;
+}
+.adaptation__sidebar .sidebar__links li .sidebar__link-submenu,
+.adaptation__sidebar-header .sidebar__links li .sidebar__link-submenu {
+  margin: 1.125vw 0 1.5625vw 2.9375vw;
+  color: #000;
+  font-size: 1vw;
+}
+.adaptation__sidebar .sidebar__links li .sidebar__link-submenu li,
+.adaptation__sidebar-header .sidebar__links li .sidebar__link-submenu li {
+  margin-bottom: 0.5vw;
+}
+.adaptation__sidebar .sidebar__links li .sidebar__link-submenu li:last-child,
+.adaptation__sidebar-header .sidebar__links li .sidebar__link-submenu li:last-child {
+  margin-bottom: 0;
+}
+.adaptation__sidebar .sidebar__links li .sidebar__link-submenu .link-submenu_acvive,
+.adaptation__sidebar-header .sidebar__links li .sidebar__link-submenu .link-submenu_acvive {
+  color: #1f3553;
+  font-weight: 700;
+}
+.adaptation__sidebar .sidebar__links span,
+.adaptation__sidebar-header .sidebar__links span {
+  font-weight: 700;
+  color: #2f87ff;
+  margin-left: 0.3125vw;
+}
+
+.adaptation__sidebar-header {
+  border-right: none;
+  border-top: 1px solid #e5e8fb;
+  width: 100%;
+  padding-bottom: 1.5625vw;
+  padding-top: 0;
+  display: none;
+}
+
+.adaptation__footer {
+  background-color: #1f3553;
+  color: #fff;
+}
+.adaptation__footer .footer__columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 2.6875vw;
+  padding-bottom: 1.875vw;
+}
+.adaptation__footer .footer__columns .footer__info {
+  font-size: 0.875vw;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 1.25vw;
+}
+.adaptation__footer .footer__columns .footer__info .footer__links {
+  -moz-column-count: 3;
+       column-count: 3;
+  -moz-column-gap: 5.625vw;
+       column-gap: 5.625vw;
+  -moz-column-width: 10.875vw;
+       column-width: 10.875vw;
+}
+.adaptation__footer .footer__columns .footer__info .footer__links .footer__link {
+  display: block;
+  margin-bottom: 0.625vw;
+  max-width: 10.875vw;
+  text-align: left;
+}
+.adaptation__footer .footer__columns .footer__info .footer__cop {
+  margin-top: 0.875vw;
+}
+.adaptation__footer .footer__columns .footer__subs {
+  max-width: 28.1875vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 1.25vw;
+}
+.adaptation__footer .footer__columns .footer__subs .subs__title {
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 1.25vw;
+  font-size: 1vw;
+}
+.adaptation__footer .footer__columns .footer__subs .subs__form {
+  display: flex;
+}
+.adaptation__footer .footer__columns .footer__subs .subs__form input {
+  width: 100%;
+  height: 3.125vw;
+  padding-left: 1.5vw;
+  background-color: #f2f2f2;
+  color: #828282;
+  font-size: 0.875vw;
+  outline: none;
+  border-radius: 0.1875vw 0px 0px 0.1875vw;
+}
+.adaptation__footer .footer__columns .footer__subs .subs__form button {
+  width: 3.875vw;
+  height: 3.125vw;
+  cursor: pointer;
+  background-color: #2f87ff;
+  background-image: url("../images/icons/subscribe.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0px 0.1875vw 0.1875vw 0px;
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(31, 53, 83, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+}
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+.popup .popup__body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625vw;
+}
+
+.adaptation__mentor {
+  overflow: hidden;
+}
+.adaptation__mentor .mentor__title {
+  font-size: 2.25vw;
+  font-weight: 700;
+  margin-bottom: 1.5vw;
+}
+.adaptation__mentor .mentor__subtitle {
+  max-width: 54.6875vw;
+  font-size: 1vw;
+  font-weight: 500;
+}
+.adaptation__mentor .mentor__mentor-block {
+  margin-top: 1.5vw;
+  display: flex;
+  width: 100%;
+  overflow-x: hidden;
+}
+.adaptation__mentor .mentor__mentor-block .mentor-block__mentor-profile {
+  background-color: #fff;
+  border-radius: 0.625vw;
+  padding: 2vw 2.0625vw 2.6875vw 2.0625vw;
+  max-width: 20.625vw;
+  margin-right: 1.25vw;
+  margin-bottom: 1vw;
+  height: 100%;
+}
+.adaptation__mentor .mentor__mentor-block .mentor-block__mentor-profile .mentor-profile__photo {
+  max-width: 10.625vw;
+  max-height: 10.625vw;
+  margin: 0 auto 1.875vw;
+}
+.adaptation__mentor .mentor__mentor-block .mentor-block__mentor-profile .mentor-profile__photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.adaptation__mentor .mentor__mentor-block .mentor-block__mentor-profile .mentor-profile__fio {
+  font-size: 1.875vw;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.0625vw;
+}
+.adaptation__mentor .mentor__mentor-block .mentor-block__mentor-profile .mentor-profile__jobtitle {
+  font-size: 0.875vw;
+  font-weight: 500;
+  line-height: 150%;
+  text-align: center;
+  color: #333;
+  margin-bottom: 1vw;
+}
+.adaptation__mentor .mentor__mentor-block .mentor-block__mentor-profile .mentor-profile__birthday {
+  font-weight: 500;
+  font-size: 0.875vw;
+  text-align: center;
+  color: #333;
+  line-height: 180%;
+  margin-bottom: 2px;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.adaptation__mentor .mentor__mentor-block .mentor-block__mentor-profile .mentor-profile__email {
+  font-size: 0.875vw;
+  font-weight: 500;
+  color: #2f87ff;
+  display: block;
+  text-align: center;
+  line-height: 180%;
+  margin-bottom: 0.6875vw;
+}
+.adaptation__mentor .mentor__mentor-block .mentor-block__mentor-profile .mentor-profile__social-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.3125vw;
+}
+.adaptation__mentor .mentor__mentor-block .mentor-block__mentor-profile .mentor-profile__social-links .mentor-profile__social-link {
+  margin-right: 1vw;
+}
+.adaptation__mentor .mentor__mentor-block .mentor-block__mentor-profile .mentor-profile__social-links .mentor-profile__social-link:last-child {
+  margin-right: 0;
+}
+.adaptation__mentor .mentor__mentor-block .mentor-block__mentor-profile .mentor-profile__social-links .mentor-profile__social-link img {
+  display: block;
+  width: 2.0625vw;
+  height: 2.0625vw;
+}
+.adaptation__mentor .mentor__mentor-block .mentor-block__mentor-profile .mentor-profile__inputs .mentor-profile__delete-from-team-btn {
+  display: inline-block;
+  text-align: center;
+  font-size: 0.875vw;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: #2f87ff;
+  text-transform: uppercase;
+  border: 1px solid #2f87ff;
+  border-radius: 0.25vw;
+  background-color: #fff;
+  width: 100%;
+  padding: 1vw 0;
+  margin-bottom: 1vw;
+  transition: background-color 0.3s;
+}
+.adaptation__mentor .mentor__mentor-block .mentor-block__mentor-profile .mentor-profile__inputs .mentor-profile__delete-from-team-btn:hover {
+  background-color: #edf5ff;
+}
+.adaptation__mentor .mentor__mentor-block .mentor-block__mentor-profile .mentor-profile__inputs .mentor-profile__add-student-btn {
+  display: inline-block;
+  text-align: center;
+  font-size: 0.875vw;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #2f87ff;
+  width: 100%;
+  padding: 1.0625vw 0;
+  border-radius: 0.1875vw;
+  transition: background-color 0.3s;
+}
+.adaptation__mentor .mentor__mentor-block .mentor-block__mentor-profile .mentor-profile__inputs .mentor-profile__add-student-btn:hover {
+  background-color: rgba(47, 135, 255, 0.8);
+}
+.adaptation__mentor .mentor-block__mentor-info {
+  width: 100%;
+  overflow: hidden;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__education {
+  padding: 1.75vw 2.25vw 5.5vw 2.5vw;
+  background-color: #fff;
+  border-radius: 0.625vw;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__education .education__title {
+  font-weight: 700;
+  font-size: 1.5vw;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__education .education__content {
+  margin-top: 2.5625vw;
+  max-width: 66.375vw;
+  padding-bottom: 1.125vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #f1f7ff;
+  border: 1px solid #c1cfeb;
+  border-radius: 0.625vw;
+  padding-left: 2.0625vw;
+  padding-right: 3.0625vw;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__education .education__content .content__progress {
+  display: flex;
+  margin-top: 1.25vw;
+  margin-right: 0.3125vw;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__education .education__content .content__progress .progress__container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3.4375vw;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__education .education__content .content__progress .progress__container .procent {
+  font-size: 1.25vw;
+  font-weight: 700;
+  color: #2f87ff;
+  text-align: center;
+  margin-bottom: 0.4375vw;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__education .education__content .content__progress .progress__container .status {
+  font-size: 0.875vw;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__education .education__content .content__progress .progress__status {
+  font-weight: 600;
+  font-size: 1.5vw;
+  display: flex;
+  align-items: center;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__education .education__content .content__data {
+  display: flex;
+  align-items: center;
+  margin-top: 1.25vw;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__education .education__content .content__data .data__img {
+  padding: 0.75vw;
+  background-color: #fff;
+  border-radius: 0.625vw;
+  margin-right: 1.0625vw;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__education .education__content .content__data .data__img img {
+  display: block;
+  width: 1.5625vw;
+  height: 1.5625vw;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__education .education__content .content__data span {
+  font-weight: 700;
+  font-size: 1vw;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__courses {
+  margin-top: 2.5625vw;
+  overflow-x: hidden;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__courses .courses__title {
+  margin-bottom: 1.625vw;
+  font-size: 1.5vw;
+  font-weight: 700;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__courses .courses__table {
+  overflow-x: auto;
+  max-width: 64.125vw;
+  margin-right: 7.5vw;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__courses .courses__table table {
+  border-spacing: 0 0.625vw;
+  table-layout: fixed;
+  max-width: 100%;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__courses .courses__table table .thead {
+  background-color: #fff;
+  height: 7.1875vw;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__courses .courses__table table .thead .thead-tr-th {
+  font-size: 0.875vw;
+  font-weight: 700;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__courses .courses__table table .thead .thead-tr-th:nth-child(1) {
+  border-radius: 0.625vw 0 0 0.625vw;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__courses .courses__table table .thead .thead-tr-th:nth-child(1) .thead-tr-th-div {
+  min-width: 17.625vw;
+  max-width: 17.625vw;
+  padding-left: 2.1875vw;
+  padding-right: 1.25vw;
+  text-align: left;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__courses .courses__table table .thead .thead-tr-th:nth-child(2) {
+  text-align: left;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__courses .courses__table table .thead .thead-tr-th:nth-child(2) .thead-tr-th-div {
+  min-width: 8.4375vw;
+  max-width: 8.4375vw;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__courses .courses__table table .thead .thead-tr-th:nth-child(3) {
+  text-align: left;
+  min-width: 8.4375vw;
+  width: 100%;
+  padding-left: 4.1875vw;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__courses .courses__table table .thead .thead-tr-th:nth-child(4) {
+  text-align: left;
+  border-radius: 0 0.625vw 0.625vw 0;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__courses .courses__table table .thead .thead-tr-th:nth-child(4) .thead-tr-th-div {
+  padding-right: 2.625vw;
+  min-width: 10vw;
+  max-width: 10vw;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__courses .courses__table table .tbody .tbody-tr {
+  background-color: #fff;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__courses .courses__table table .tbody .tbody-tr .tbody-tr-td {
+  font-size: 0.875vw;
+  font-weight: 500;
+  padding-left: 0.625vw;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__courses .courses__table table .tbody .tbody-tr .tbody-tr-td:nth-child(1) {
+  color: #2f87ff;
+  padding: 2.0625vw 1.5625vw 2.0625vw 2.1875vw;
+  border-radius: 0.625vw 0 0 0.625vw;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__courses .courses__table table .tbody .tbody-tr .tbody-tr-td:nth-child(2) {
+  text-align: left;
+  padding-left: 0;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__courses .courses__table table .tbody .tbody-tr .tbody-tr-td:nth-child(3) {
+  padding-left: 4.1875vw;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__courses .courses__table table .tbody .tbody-tr .tbody-tr-td:nth-child(4) {
+  border-radius: 0 0.625vw 0.625vw 0;
+  font-feature-settings: "pnum" on, "lnum" on;
+  padding-left: 0;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__courses .courses__table table .tbody .tbody-tr .tbody-tr-td:nth-child(4) .tbody-tr-td-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__courses .courses__table table .tbody .tbody-tr .tbody-tr-td:nth-child(4) .tbody-tr-td-div .procent {
+  font-weight: 700;
+  font-size: 1.25vw;
+  margin-bottom: 0.5625vw;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__courses .courses__table table .tbody .tbody-tr .tbody-tr-td:nth-child(4) .tbody-tr-td-div .procent-green {
+  color: #27ae60;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__courses .courses__table table .tbody .tbody-tr .tbody-tr-td:nth-child(4) .tbody-tr-td-div .procent-blue {
+  color: #2f87ff;
+}
+.adaptation__mentor .mentor-block__mentor-info .mentor-info__courses .courses__table table .tbody .tbody-tr .tbody-tr-td:nth-child(4) .tbody-tr-td-div .procent-red {
+  color: #ff5b15;
+}
+.adaptation__mentor .mentor__students {
+  margin-top: 2.8125vw;
+}
+.adaptation__mentor .mentor__students .students__title {
+  font-size: 1.5vw;
+  font-weight: 700;
+  margin-bottom: 2.1875vw;
+}
+.adaptation__mentor .mentor__students .student__table {
+  overflow-x: auto;
+  margin-bottom: 3.125vw;
+}
+.adaptation__mentor .mentor__students .student__table .table {
+  border-spacing: 0 0.625vw;
+  table-layout: fixed;
+  min-width: 100%;
+}
+.adaptation__mentor .mentor__students .student__table .table .thead {
+  background-color: #fff;
+  height: 7.1875vw;
+}
+.adaptation__mentor .mentor__students .student__table .table .thead .thead-tr-th {
+  font-size: 0.875vw;
+  font-weight: 700;
+  text-align: left;
+  padding-left: 0.9375vw;
+  cursor: pointer;
+}
+.adaptation__mentor .mentor__students .student__table .table .thead .thead-tr-th:nth-child(1) {
+  border-radius: 0.625vw 0 0 0.625vw;
+  padding-left: 2.125vw;
+  min-width: 8.75vw;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  background-color: #fff;
+}
+.adaptation__mentor .mentor__students .student__table .table .thead .thead-tr-th:nth-child(2) {
+  min-width: 8.5625vw;
+}
+.adaptation__mentor .mentor__students .student__table .table .thead .thead-tr-th:nth-child(3) {
+  min-width: 9.8125vw;
+}
+.adaptation__mentor .mentor__students .student__table .table .thead .thead-tr-th:nth-child(4) {
+  min-width: 6.4375vw;
+}
+.adaptation__mentor .mentor__students .student__table .table .thead .thead-tr-th:nth-child(5) {
+  min-width: 8.125vw;
+}
+.adaptation__mentor .mentor__students .student__table .table .thead .thead-tr-th:nth-child(6) {
+  min-width: 6.625vw;
+}
+.adaptation__mentor .mentor__students .student__table .table .thead .thead-tr-th:nth-child(7) {
+  min-width: 8.6875vw;
+}
+.adaptation__mentor .mentor__students .student__table .table .thead .thead-tr-th:nth-child(8) {
+  min-width: 9.875vw;
+  border-radius: 0 0.625vw 0.625vw 0;
+}
+.adaptation__mentor .mentor__students .student__table .table .tbody .tbody-tr {
+  background-color: #fff;
+}
+.adaptation__mentor .mentor__students .student__table .table .tbody .tbody-tr .tbody-tr-td {
+  font-size: 0.875vw;
+  font-weight: 500;
+  height: 7vw;
+  padding-left: 0.9375vw;
+}
+.adaptation__mentor .mentor__students .student__table .table .tbody .tbody-tr .tbody-tr-td:nth-child(1) {
+  padding-left: 2.125vw;
+  border-radius: 0.625vw 0 0 0.625vw;
+  color: #2f87ff;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  background-color: #fff;
+}
+.adaptation__mentor .mentor__students .student__table .table .tbody .tbody-tr .tbody-tr-td:nth-child(5) {
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.adaptation__mentor .mentor__students .student__table .table .tbody .tbody-tr .tbody-tr-td:nth-child(7) {
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.adaptation__mentor .mentor__students .student__table .table .tbody .tbody-tr .tbody-tr-td:nth-child(8) {
+  color: #2f87ff;
+  text-decoration: underline;
+  border-radius: 0 0.625vw 0.625vw 0;
+}
+.adaptation__mentor .mentor__students .student__table .table .tbody .tbody-tr .tbody-tr-td .steps,
+.adaptation__mentor .mentor__students .student__table .table .tbody .tbody-tr .tbody-tr-td .educ {
+  display: flex;
+  flex-direction: column;
+}
+.adaptation__mentor .mentor__students .student__table .table .tbody .tbody-tr .tbody-tr-td .steps .steps__procent,
+.adaptation__mentor .mentor__students .student__table .table .tbody .tbody-tr .tbody-tr-td .steps .educ__procent,
+.adaptation__mentor .mentor__students .student__table .table .tbody .tbody-tr .tbody-tr-td .educ .steps__procent,
+.adaptation__mentor .mentor__students .student__table .table .tbody .tbody-tr .tbody-tr-td .educ .educ__procent {
+  margin-bottom: 0.5625vw;
+  font-size: 1.25vw;
+  font-weight: 700;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.adaptation__mentor .mentor__students .student__table .table .tbody .tbody-tr .tbody-tr-td .steps .procent-green,
+.adaptation__mentor .mentor__students .student__table .table .tbody .tbody-tr .tbody-tr-td .educ .procent-green {
+  color: #27ae60;
+}
+.adaptation__mentor .mentor__students .student__table .table .tbody .tbody-tr .tbody-tr-td .steps .procent-blue,
+.adaptation__mentor .mentor__students .student__table .table .tbody .tbody-tr .tbody-tr-td .educ .procent-blue {
+  color: #2f87ff;
+}
+.adaptation__mentor .mentor__students .student__table .table .tbody .tbody-tr .tbody-tr-td .steps .procent-red,
+.adaptation__mentor .mentor__students .student__table .table .tbody .tbody-tr .tbody-tr-td .educ .procent-red {
+  color: #ff5b15;
+}
+.adaptation__mentor .mentors__delete-mentor-form {
+  background-color: #fff;
+  max-width: 37.125vw;
+  padding: 0.9375vw 2vw 2.625vw;
+  border-radius: 0.625vw;
+  box-shadow: 0px 3.125vw 3.125vw -2.5vw rgba(31, 53, 83, 0.5);
+}
+.adaptation__mentor .mentors__delete-mentor-form .delete-mentor-form__close-form-btn {
+  background-image: url("../images/icons/closeform.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 0.75vw 0.75vw;
+  width: 0.75vw;
+  height: 0.75vw;
+  background-color: #fff;
+  display: block;
+  margin-left: auto;
+  cursor: pointer;
+  margin-right: -0.3125vw;
+}
+.adaptation__mentor .mentors__delete-mentor-form .delete-mentor-form__title {
+  font-size: 1.5vw;
+  font-weight: 700;
+  margin-bottom: 1vw;
+}
+.adaptation__mentor .mentors__delete-mentor-form .delete-mentor-form__subtitle {
+  font-size: 1vw;
+  font-weight: 500;
+  margin-bottom: 1vw;
+}
+.adaptation__mentor .mentors__delete-mentor-form .delete-mentor-form__comment {
+  width: 100%;
+  resize: none;
+  height: 6.25vw;
+  background: #f8f8f8;
+  border-radius: 0.1875vw;
+  color: #333;
+  padding: 1vw 1vw 1vw 1.25vw;
+  margin-bottom: 1vw;
+  font-size: 0.875vw;
+}
+.adaptation__mentor .mentors__delete-mentor-form .delete-mentor-form__inputs .inputs__cancel-btn {
+  font-size: 0.875vw;
+  background: #f4f5f8;
+  border-radius: 0.1875vw;
+  color: #2f87ff;
+  text-transform: uppercase;
+  padding: 1vw 2.625vw;
+  cursor: pointer;
+  margin-right: 1vw;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+.adaptation__mentor .mentors__delete-mentor-form .delete-mentor-form__inputs .inputs__cancel-btn:hover {
+  background-color: rgba(244, 245, 248, 0.8);
+}
+.adaptation__mentor .mentors__delete-mentor-form .delete-mentor-form__inputs .inputs__delete-btn {
+  font-size: 0.875vw;
+  background: #eb5757;
+  border-radius: 0.1875vw;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 1vw 2.625vw;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+.adaptation__mentor .mentors__delete-mentor-form .delete-mentor-form__inputs .inputs__delete-btn:hover {
+  background-color: rgba(235, 87, 87, 0.8);
+}
+.adaptation__mentor .mentors__add-students-form {
+  padding: 0.9375vw 2.5vw 3.8125vw 2.5vw;
+  max-width: 70.625vw;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 3.125vw 3.125vw -2.5vw rgba(31, 53, 83, 0.5);
+  border-radius: 0.625vw;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__close-form-btn {
+  background-image: url("../images/icons/closeform.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 0.75vw 0.75vw;
+  width: 0.75vw;
+  height: 0.75vw;
+  background-color: #fff;
+  display: block;
+  margin-right: 0;
+  margin-left: auto;
+  margin-right: -1.0625vw;
+  cursor: pointer;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__title {
+  font-size: 1.5vw;
+  font-weight: 700;
+  margin-bottom: 1.3125vw;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__inputs {
+  margin-bottom: 1.5vw;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__inputs .inputs__elem {
+  height: 3.125vw;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__inputs .inputs__search-student-input {
+  display: flex;
+  margin-bottom: 1vw;
+  width: 100%;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__inputs .inputs__search-student-input .search-field {
+  letter-spacing: 0.1em;
+  font-size: 0.875vw;
+  font-weight: 600;
+  padding-left: 1.125vw;
+  padding-right: 1.875vw;
+  color: #333;
+  width: 100%;
+  height: 100%;
+  background-color: #f8f8f8;
+  border-radius: 0.1875vw;
+  background-image: url("../images/icons/search.svg");
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 0.5vw);
+  background-position-y: center;
+  background-size: 1.25vw 1.25vw;
+  max-width: 54.5625vw;
+  margin-right: 0.5vw;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__inputs .inputs__search-student-input .search-field::-webkit-search-cancel-button {
+  display: none;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__inputs .inputs__search-student-input .inputs__search-student-btn {
+  letter-spacing: 0.1em;
+  color: #fff;
+  background-color: #2f87ff;
+  margin-bottom: 1vw;
+  border-radius: 0.1875vw;
+  padding: 1vw 3.5vw;
+  font-size: 0.875vw;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__inputs .inputs__search-student-input .inputs__search-student-btn:hover {
+  background-color: rgba(47, 135, 255, 0.8);
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__inputs .inputs__selects-row {
+  display: flex;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__inputs .inputs__selects-row .inputs__select-subdivision {
+  max-width: 28.75vw;
+  width: 100%;
+  margin-right: 1vw;
+  background: #f8f8f8;
+  border-radius: 0.1875vw;
+  outline: none;
+  border: none;
+  letter-spacing: 0.1em;
+  padding-left: 1.125vw;
+  padding-right: 1.3125vw;
+  font-size: 0.875vw;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 1vw;
+  background-image: url("../images/icons/arrow-select.svg");
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 1vw);
+  background-position-y: center;
+  background-size: 0.9375vw 0.4375vw;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__inputs .inputs__selects-row .inputs__select-jobtitle {
+  max-width: 35.875vw;
+  width: 100%;
+  background: #f8f8f8;
+  border-radius: 0.1875vw;
+  outline: none;
+  border: none;
+  letter-spacing: 0.1em;
+  padding-left: 1.125vw;
+  font-size: 0.875vw;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 1vw;
+  background-image: url("../images/icons/arrow-select.svg");
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 1vw);
+  background-position-y: center;
+  background-size: 0.9375vw 0.4375vw;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__inputs .inputs__select-mentor {
+  max-width: 65.625vw;
+  width: 100%;
+  background: #f8f8f8;
+  border-radius: 0.1875vw;
+  outline: none;
+  border: none;
+  letter-spacing: 0.1em;
+  padding-left: 1.125vw;
+  font-size: 0.875vw;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-image: url("../images/icons/arrow-select.svg");
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 1vw);
+  background-position-y: center;
+  background-size: 0.9375vw 0.4375vw;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__students-container .students-container__selected-panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 0.75vw;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__students-container .students-container__selected-panel .selected-container__select-all-checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25vw;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__students-container .students-container__selected-panel .selected-container__select-all-checkbox .custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__students-container .students-container__selected-panel .selected-container__select-all-checkbox .custom-checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__students-container .students-container__selected-panel .selected-container__select-all-checkbox .custom-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 1.5vw;
+  height: 1.5vw;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #2f87ff;
+  margin-right: 1vw;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__students-container .students-container__selected-panel .selected-container__select-all-checkbox .custom-checkbox:checked + label::before {
+  border-color: #0b76ef;
+  background-color: #fff;
+  background-image: url("../images/icons/checkbox.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1vw 1vw;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__students-container .students-container__selected-panel .selected-container__select-all-checkbox .select-all {
+  font-size: 0.875vw;
+  font-weight: 600;
+  color: #2f87ff;
+  cursor: pointer;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__students-container .students-container__selected-panel .selected-container__select-all-checkbox .clear-all {
+  font-size: 0.875vw;
+  font-weight: 600;
+  color: #86909e;
+  margin-left: 2.0625vw;
+  cursor: pointer;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__students-container .students-container__selected-panel .selected-panel__appoint-off-btn {
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 0.875vw;
+  color: #eb5757;
+  font-weight: 600;
+  margin-bottom: 1.25vw;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__students-container .students-container__students-table {
+  overflow-x: auto;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__students-container .students-container__students-table table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__students-container .students-container__students-table table .thead {
+  margin-bottom: 2.5vw;
+  background-color: #f8f8f8;
+  height: 3.125vw;
+  margin-bottom: 2.4375vw;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__students-container .students-container__students-table table .thead .thead-tr-th {
+  font-size: 0.875vw;
+  font-weight: 700;
+  cursor: pointer;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__students-container .students-container__students-table table .thead .thead-tr-th:nth-child(1) {
+  width: 20.625vw;
+  border-radius: 0.625vw 0 0 0.625vw;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__students-container .students-container__students-table table .thead .thead-tr-th:nth-child(2) {
+  width: 15.9375vw;
+  padding-left: 0.625vw;
+  text-align: left;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__students-container .students-container__students-table table .thead .thead-tr-th:nth-child(3) {
+  width: 12.1875vw;
+  padding-left: 0.625vw;
+  text-align: left;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__students-container .students-container__students-table table .thead .thead-tr-th:last-child {
+  border-radius: 0 0.625vw 0.625vw 0;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__students-container .students-container__students-table table .tbody::before {
+  content: "@";
+  display: block;
+  line-height: 2.4375vw;
+  text-indent: -6249.9375vw;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__students-container .students-container__students-table table .tbody td {
+  width: 12.5vw;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__students-container .students-container__students-table table .tbody .tbody-tr {
+  width: 100%;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__students-container .students-container__students-table table .tbody .tbody-tr .tbody-tr-td {
+  font-size: 0.875vw;
+  font-weight: 600;
+  text-align: left;
+  padding-bottom: 1vw;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__students-container .students-container__students-table table .tbody .tbody-tr .tbody-tr-td .custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__students-container .students-container__students-table table .tbody .tbody-tr .tbody-tr-td .custom-checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__students-container .students-container__students-table table .tbody .tbody-tr .tbody-tr-td .custom-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 1.5vw;
+  height: 1.5vw;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #2f87ff;
+  margin-right: 1.25vw;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__students-container .students-container__students-table table .tbody .tbody-tr .tbody-tr-td .custom-checkbox:checked + label::before {
+  border-color: #0b76ef;
+  background-color: #fff;
+  background-image: url("../images/icons/checkbox.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1vw 1vw;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__students-container .students-container__students-table table .tbody .tbody-tr .tbody-tr-td label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__students-container .students-container__students-table table .tbody .tbody-tr .tbody-tr-td label img {
+  width: 3.125vw;
+  height: 3.125vw;
+  border-radius: 50%;
+  display: block;
+  margin-right: 1.875vw;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__students-container .students-container__students-table table .tbody .tbody-tr .tbody-tr-td label span {
+  max-width: 8.75vw;
+  font-size: 0.875vw;
+  font-weight: 600;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__save-btn {
+  height: 3.125vw;
+  color: #fff;
+  background-color: #2f87ff;
+  border-radius: 0.1875vw;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 0.875vw;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  margin-top: 2.4375vw;
+  cursor: pointer;
+}
+.adaptation__mentor .mentors__add-students-form .add-students-form__save-btn:hover {
+  background-color: rgba(47, 135, 255, 0.8);
+}
+
+}

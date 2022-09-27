@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css_build/adaptation-mentor.css">
+    <link rel="stylesheet" href="../css_build/adaptation-mentor_vw.css">
+    <link rel="stylesheet" href="../css_build/adaptation-mentor_vw-mob.css">
+
+    <title>Arctic Talents</title>
+</head>
+
+<body>
+    <header class="adaptation__header">
+        <div class="adaptation__container">
+
+            <div class="adaptation__header-content">
+                <div class="header-content__logo">
+                    <img src="../images/logo.svg" alt="Arctic Talents">
+                </div>
+
+                <input type="checkbox" id="menu-toggler">
+                <label for="menu-toggler" class="hamburger"><span></span></label>
+
+                <div class="header-content__menu">
+                    <nav class="menu__navigation">
+                        <ul class="navigation__list">
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Истории успеха</a></li>
+                            <li><a href="#">Информация</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+
+
+                        <nav class="adaptation__sidebar-header">
+                            <ul class="sidebar__links">
+                                <li>
+                                    <a href="#" class="sidebar__link">
+                                        <div class="sidebar__link-img"><img src="../images/icons/sidebar/results.svg"
+                                                alt=""></div>
+                                        Сводка результатов
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar__link">
+                                        <div class="sidebar__link-img"><img src="../images/icons/sidebar/vacancies.svg"
+                                                alt="">
+                                        </div>
+                                        Вакансии
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar__link">
+                                        <div class="sidebar__link-img"><img src="../images/icons/sidebar/projects.svg"
+                                                alt=""></div>
+                                        Проекты
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="adaptation-instruction.html" class="sidebar__link sidebar__link_active">
+                                        <div class="sidebar__link-img"><img src="../images/icons/sidebar/mentorship.svg"
+                                                alt="">
+                                        </div>
+                                        Наставничество
+                                    </a>
+                                    <ul class="sidebar__link-submenu">
+                                        <li><a href="adaptation-main.html">Адаптация</a></li>
+                                        <li><a href="adaptation-welcome-book.html">Welcome-book</a></li>
+                                        <li><a href="adaptation-mentors.html">Команда наставников</a></li>
+                                        <li><a href="adaptation-employees.html">Сотрудники на адаптации</a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="sidebar__link">
+                                        <div class="sidebar__link-img"><img
+                                                src="../images/icons/sidebar/notifications.svg" alt="">
+                                        </div>
+                                        Уведомления <span>(10)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar__link">
+                                        <div class="sidebar__link-img"><img src="../images/icons/sidebar/tests.svg"
+                                                alt=""></div>
+                                        Тесты
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar__link">
+                                        <div class="sidebar__link-img"><img src="../images/icons/sidebar/quiz.svg"
+                                                alt=""></div>
+                                        Опросы
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar__link">
+                                        <div class="sidebar__link-img"><img src="../images/icons/sidebar/education.svg"
+                                                alt="">
+                                        </div>
+                                        Обучение
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar__link">
+                                        <div class="sidebar__link-img"><img src="../images/icons/sidebar/grade.svg"
+                                                alt=""></div>
+                                        Оценка персонала
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar__link">
+                                        <div class="sidebar__link-img"><img
+                                                src="../images/icons/sidebar/organization.svg" alt="">
+                                        </div>
+                                        Организация
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar__link">
+                                        <div class="sidebar__link-img"><img src="../images/icons/sidebar/settings.svg"
+                                                alt="">
+                                        </div>
+                                        Настройки
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar__link">
+                                        <div class="sidebar__link-img"><img src="../images/icons/sidebar/grade.svg"
+                                                alt=""></div>
+                                        Оценка 360
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+
+                        <div class="navigation__org-mail-block">
+                            <div class="navigation__organization">
+                                <a href="#"><img src="../images/icons/createorganization.svg" alt="">Создать
+                                    организацию</a>
+                            </div>
+                            <a href="#" class="navigation__mail"><img src="../images/icons/post.svg" alt=""></a>
+                        </div>
+                        <a href="#" class="navigation__logout-btn">Выйти</a>
+                    </nav>
+                </div>
+                <div class="header-content__user">
+                    <a href="#">
+                        <div class="user__avatar">
+                            <img src="../images/activeuser.png" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="adaptation__main">
+        <section class=" adaptation__container adaptation__wrapper">
+            <nav class="adaptation__sidebar">
+                <ul class="sidebar__links">
+                    <li>
+                        <a href="#" class="sidebar__link">
+                            <div class="sidebar__link-img"><img src="../images/icons/sidebar/results.svg" alt=""></div>
+                            Сводка результатов
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar__link">
+                            <div class="sidebar__link-img"><img src="../images/icons/sidebar/vacancies.svg" alt="">
+                            </div>
+                            Вакансии
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar__link">
+                            <div class="sidebar__link-img"><img src="../images/icons/sidebar/projects.svg" alt=""></div>
+                            Проекты
+                        </a>
+                    </li>
+                    <li>
+                        <a href="adaptation-instruction.html" class="sidebar__link sidebar__link_active">
+                            <div class="sidebar__link-img"><img src="../images/icons/sidebar/mentorship.svg" alt="">
+                            </div>
+                            Наставничество
+                        </a>
+                        <ul class="sidebar__link-submenu">
+                            <li><a href="adaptation-main.html">Адаптация</a></li>
+                            <li><a href="adaptation-welcome-book.html">Welcome-book</a></li>
+                            <li><a href="adaptation-mentors.html">Команда наставников</a></li>
+                            <li><a href="adaptation-employees.html">Сотрудники на адаптации</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar__link">
+                            <div class="sidebar__link-img"><img src="../images/icons/sidebar/notifications.svg" alt="">
+                            </div>
+                            Уведомления <span>(10)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar__link">
+                            <div class="sidebar__link-img"><img src="../images/icons/sidebar/tests.svg" alt=""></div>
+                            Тесты
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar__link">
+                            <div class="sidebar__link-img"><img src="../images/icons/sidebar/quiz.svg" alt=""></div>
+                            Опросы
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar__link">
+                            <div class="sidebar__link-img"><img src="../images/icons/sidebar/education.svg" alt="">
+                            </div>
+                            Обучение
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar__link">
+                            <div class="sidebar__link-img"><img src="../images/icons/sidebar/grade.svg" alt=""></div>
+                            Оценка персонала
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar__link">
+                            <div class="sidebar__link-img"><img src="../images/icons/sidebar/organization.svg" alt="">
+                            </div>
+                            Организация
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar__link">
+                            <div class="sidebar__link-img"><img src="../images/icons/sidebar/settings.svg" alt="">
+                            </div>
+                            Настройки
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar__link">
+                            <div class="sidebar__link-img"><img src="../images/icons/sidebar/grade.svg" alt=""></div>
+                            Оценка 360
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section class="adaptation__mentor adaptation__main-section-content">
+                <h1 class="mentor__title">Николаев Петр Васильевич</h1>
+                <p class="mentor__subtitle">Наставник — это человек, который воодушевляет вас и помогает
+                    извлечь максимальную пользу из ваших личных ресурсов и ресурсов вашей организации.</p>
+
+                <div class="mentor__mentor-block">
+
+                    <div class="mentor-block__mentor-profile">
+                        <div class="mentor-profile__photo">
+                            <img src="../images/mentoravatar.png" alt="">
+                        </div>
+                        <p class="mentor-profile__fio">Николаев Пётр Васильевич</p>
+                        <p class="mentor-profile__jobtitle">Заместитель министра инноваций, цифрового развития и
+                            инфокоммуникационных технологий Республики Саха (Якутия)</p>
+                        <p class="mentor-profile__birthday">24.07.1987</p>
+                        <a href="vk.com" class="mentor-profile__email" target="_blank">nikolaevpv@sakha.gov.ru</a>
+                        <div class="mentor-profile__social-links">
+                            <a href="#" class="mentor-profile__social-link" target="_blank">
+                                <img src="../images/icons/social/facebook.svg" alt="">
+                            </a>
+                            <a href="#" class="mentor-profile__social-link" target="_blank">
+                                <img src="../images/icons/social/instagram.svg" alt="">
+                            </a>
+                            <a href="#" class="mentor-profile__social-link" target="_blank">
+                                <img src="../images/icons/social/vkontakte.svg" alt="">
+                            </a>
+                            <a href="#" class="mentor-profile__social-link" target="_blank">
+                                <img src="../images/icons/social/twitter.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="mentor-profile__inputs">
+                            <a href="#del" class="mentor-profile__delete-from-team-btn">Убрать из команды</a>
+                            <a href="#add" class="mentor-profile__add-student-btn">Добавить учеников</a>
+                        </div>
+                    </div>
+
+                    <div class="mentor-block__mentor-info">
+
+                        <div class="mentor-info__education">
+                            <p class="education__title">Обучение наставника</p>
+
+                            <div class="education__content">
+                                <div class="content__progress">
+                                    <div class="progress__container">
+                                        <span class="procent">25%</span>
+                                        <span class="status">В процессе</span>
+                                    </div>
+                                    <div class="progress__status">Обучение</div>
+                                </div>
+                                <div class="content__data">
+                                    <div class="data__img">
+                                        <img src="../images/icons/calendar.svg" alt="">
+                                    </div>
+                                    <span>Пройти до 30.11.2020</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mentor-info__courses">
+                            <h2 class="courses__title">Пакет курсов для наставника</h2>
+                            <div class="courses__table">
+                                <table class="table">
+                                    <thead class="thead">
+                                        <tr class="theda-tr">
+                                            <th class="thead-tr-th">
+                                                <div class="thead-tr-th-div">Название</div>
+                                            </th>
+                                            <th class="thead-tr-th">
+                                                <div class="thead-tr-th-div">Дата обучения</div>
+                                            </th>
+                                            <th class="thead-tr-th">
+                                                Сроки
+                                            </th>
+                                            <th class="thead-tr-th">
+                                                <div class="thead-tr-th-div">Отметка о выполнении</div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="tbody">
+                                        <tr class="tbody-tr">
+                                            <td class="tbody-tr-td">
+                                                <a href="#"> Курс цифровая экономика и цифровая трансформация</a>
+
+                                            </td>
+                                            <td class="tbody-tr-td">
+                                                15.05.2022
+                                            </td>
+                                            <td class="tbody-tr-td">
+                                                20.09.2022
+                                            </td>
+                                            <td class="tbody-tr-td">
+                                                <div class="tbody-tr-td-div">
+                                                    <span class="procent procent-green">100%</span>
+                                                    <span class="status">Пройдено</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tbody-tr">
+                                            <td class="tbody-tr-td">
+                                                <a href="#">Курс цифровая экономика и цифровая трансформация</a>
+                                            </td>
+                                            <td class="tbody-tr-td">15.05.2022</td>
+                                            <td class="tbody-tr-td">20.09.2022</td>
+                                            <td class="tbody-tr-td">
+                                                <div class="tbody-tr-td-div">
+                                                    <span class="procent procent-blue">25%</span>
+                                                    <span class="status">В процессе</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="tbody-tr">
+                                            <td class="tbody-tr-td">
+                                                <a href="#">Контактная система в сфере закупок товаров , работ,
+                                                    услуг для обеспечения государственных и муниципальных нудж</a>
+                                            </td>
+                                            <td class="tbody-tr-td">15.05.2022</td>
+                                            <td class="tbody-tr-td">20.09.2022</td>
+                                            <td class="tbody-tr-td">
+                                                <div class="tbody-tr-td-div">
+                                                    <span class="procent procent-red">0%</span>
+                                                    <span class="status">Не начато</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- список студентов ментора -->
+                <div class="mentor__students">
+                    <h2 class="students__title">Список учеников</h2>
+                    <div class="student__table">
+                        <table class="table" id="table1">
+                            <thead class="thead">
+                                <tr class="thead-tr">
+                                    <th class="thead-tr-th" onclick="sortTable(0,'table1')">ФИО&nbsp;&uarr;&darr;</th>
+                                    <th class="thead-tr-th" onclick="sortTable(1,'table1')">Должность&nbsp;&uarr;&darr;
+                                    </th>
+                                    <th class="thead-tr-th" onclick="sortTable(2,'table1')">
+                                        Подразделение&nbsp;&uarr;&darr;</th>
+                                    <th class="thead-tr-th">Этапы</th>
+                                    <th class="thead-tr-th">Результаты баллы в анкетах</th>
+                                    <th class="thead-tr-th">Обучение</th>
+                                    <th class="thead-tr-th" onclick="sortTable(3,'table1')">Дата
+                                        окончания&nbsp;&uarr;&darr;</th>
+                                    <th class="thead-tr-th">Наставник</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tbody">
+                                <tr class="tbody-tr">
+                                    <td class="tbody-tr-td"><a href="#">Иванов Иван Иванович</a></td>
+                                    <td class="tbody-tr-td">Работник</td>
+                                    <td class="tbody-tr-td">Подразделение_1</td>
+                                    <td class="tbody-tr-td">
+                                        <div class="steps"><span
+                                                class="steps__procent procent-green">100%</span><span>Пройдено</span>
+                                        </div>
+                                    </td>
+                                    <td class="tbody-tr-td">33 из 150</td>
+                                    <td class="tbody-tr-td">
+                                        <div class="educ"><span
+                                                class="educ__procent procent-green">100%</span><span>Пройдено</span>
+                                        </div>
+                                    </td>
+                                    <td class="tbody-tr-td">24.06.2022</td>
+                                    <td class="tbody-tr-td"><a href="#">Иванов Константин Петрович</a></td>
+                                </tr>
+
+                                <tr class="tbody-tr">
+                                    <td class="tbody-tr-td"><a href="#">Сидоров Иван Иванович</a></td>
+                                    <td class="tbody-tr-td">Заместитель</td>
+                                    <td class="tbody-tr-td">Подразделение_3</td>
+                                    <td class="tbody-tr-td">
+                                        <div class="steps"><span class="steps__procent procent-blue">25%</span><span>В
+                                                процессе</span>
+                                        </div>
+                                    </td>
+                                    <td class="tbody-tr-td">33 из 150</td>
+                                    <td class="tbody-tr-td">
+                                        <div class="educ"><span class="educ__procent procent-blue">25%</span><span>В
+                                                процессе</span>
+                                        </div>
+                                    </td>
+                                    <td class="tbody-tr-td">27.06.2022</td>
+                                    <td class="tbody-tr-td"><a href="#">Сидоров Константин Петрович</a></td>
+                                </tr>
+
+                                <tr class="tbody-tr">
+                                    <td class="tbody-tr-td"><a href="#">Петров Иван Иванович</a></td>
+                                    <td class="tbody-tr-td">Работник</td>
+                                    <td class="tbody-tr-td">Подразделение_2</td>
+                                    <td class="tbody-tr-td">
+                                        <div class="steps"><span class="steps__procent procent-red">0%</span><span>Не
+                                                начато</span>
+                                        </div>
+                                    </td>
+                                    <td class="tbody-tr-td">33 из 150</td>
+                                    <td class="tbody-tr-td">
+                                        <div class="educ"><span class="educ__procent procent-red">0%</span><span>Не
+                                                начато</span>
+                                        </div>
+                                    </td>
+                                    <td class="tbody-tr-td">21.06.2022</td>
+                                    <td class="tbody-tr-td"><a href="#">Петров Константин Петрович</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- форма удаления наставника -->
+                <div id="del" class="popup">
+                    <div class="popup__body">
+                        <div class="mentors__delete-mentor-form">
+                            <a href="#" class="delete-mentor-form__close-form-btn"></a>
+                            <!-- <button class="delete-mentor-form__close-form-btn"></button> -->
+                            <p class="delete-mentor-form__title">Внимание!</p>
+                            <p class="delete-mentor-form__subtitle">Вы действительно решили Николаева Петра Васильевича
+                                из команды наставников? </p>
+                            <textarea name="" id="" class="delete-mentor-form__comment"
+                                placeholder="Комментарий"></textarea>
+                            <div class="delete-mentor-form__inputs">
+                                <a href="#" class="inputs__cancel-btn">отмена</a>
+                                <!-- <input type="button" value="отмена" class="inputs__cancel-btn"> -->
+                                <input type="button" value="Удалить" class="inputs__delete-btn">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- форма добавления учеников -->
+                <div id="add" class="popup">
+                    <div class="popup__body">
+                        <div class="mentors__add-students-form">
+                            <a href="#" class="add-students-form__close-form-btn"></a>
+                            <p class="add-students-form__title">Назначить учеников</p>
+
+                            <div class="add-students-form__inputs">
+
+                                <div class="inputs__search-student-input inputs__elem">
+                                    <input type="search" placeholder="ПОИСК" class="search-field">
+                                    <!-- <img src="../images/icons/search.svg" alt=""> -->
+                                    <input type="button" value="поиск" class="inputs__search-student-btn inputs__elem">
+                                </div>
+
+                                <div class="inputs__selects-row">
+                                    <select name="" id="" class="inputs__select-subdivision inputs__elem">
+                                        <option value="" disabled selected>подразделение</option>
+                                        <option value="tmp">tmp</option>
+                                        <option value="tmp">tmp</option>
+                                    </select>
+
+                                    <select name="" id="" class="inputs__select-jobtitle inputs__elem">
+                                        <option value="" disabled selected>должность</option>
+                                        <option value="tmp">tmp</option>
+                                        <option value="tmp">tmp</option>
+                                    </select>
+                                </div>
+                                <select name="" id="" class="inputs__select-mentor inputs__elem">
+                                    <option value="" disabled selected>Выберите наставника</option>
+                                    <option value="tmp">tmp</option>
+                                    <option value="tmp">tmp</option>
+                                </select>
+                            </div>
+
+                            <div class="add-students-form__students-container">
+
+                                <div class="students-container__selected-panel">
+                                    <div class="selected-container__select-all-checkbox">
+                                        <input type="checkbox" id="select-all" class="custom-checkbox main-checkbox"
+                                            onclick="allCheckboxChecked('main-checkbox')">
+                                        <label for="select-all" class="select-all">Выбрать всех</label>
+                                        <label for="" class="clear-all" onclick="allCheckboxOff()">Очистить</label>
+                                    </div>
+                                    <input type="button" value="Снять назначение"
+                                        class="selected-panel__appoint-off-btn" onclick="allCheckboxOff()">
+                                </div>
+
+                                <div class="students-container__students-table">
+                                    <table class="table" id="table2">
+                                        <thead class="thead">
+                                            <tr class="theda-tr">
+                                                <th class="thead-tr-th" onclick="sortTable(0,'table2')">
+                                                    ФИО&emsp;&uarr;&darr;</th>
+                                                <th class="thead-tr-th" onclick="sortTable(1,'table2')">
+                                                    Подразделение&emsp;&uarr;&darr;</th>
+                                                <th class="thead-tr-th" onclick="sortTable(2,'table2')">
+                                                    Должность&emsp;&uarr;&darr;</th>
+                                                <th class="thead-tr-th"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="tbody">
+                                            <tr class="tbody-tr">
+                                                <td class="tbody-tr-td">
+                                                    <input type="checkbox" id="student" class="custom-checkbox">
+                                                    <label for="student"><img src="../images/student.jpg" alt="">
+                                                        <span>Иванова Наталья Степановна</span> </label>
+                                                </td>
+                                                <td class="tbody-tr-td">Название подразделения</td>
+                                                <td class="tbody-tr-td">Помощник директора по развитию территории</td>
+                                            </tr>
+
+                                            <tr class="tbody-tr">
+                                                <td class="tbody-tr-td">
+                                                    <input type="checkbox" id="student2" class="custom-checkbox">
+                                                    <label for="student2"><img src="../images/student.jpg" alt="">
+                                                        <span>Петрова Наталья Степановна</span> </label>
+                                                </td>
+                                                <td class="tbody-tr-td">Название подразделения 2</td>
+                                                <td class="tbody-tr-td">Помощник директора по развитию</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <input type="button" value="сохранить" class="add-students-form__save-btn">
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </section>
+
+        </section>
+    </main>
+    <footer class="adaptation__footer">
+        <div class="adaptation__footer-container">
+            <div class="footer__columns">
+                <div class="footer__info">
+                    <div class="footer__links">
+                        <a href="#" class="footer__link">О нас</a>
+                        <a href="#" class="footer__link">Новости</a>
+                        <a href="#" class="footer__link">Истории успеха</a>
+                        <a href="#" class="footer__link">FAQ</a>
+                        <a href="#" class="footer__link">Правила участия в конкурсах на вакансию</a>
+                        <a href="#" class="footer__link">Вакансии</a>
+                        <a href="#" class="footer__link">Проекты</a>
+                    </div>
+                    <div class="footer__cop">© 2020 Arctic Talents (Саха Якутия)</div>
+                </div>
+                <div class="footer__subs">
+                    <p class="subs__title">Подпишитесь на наши обновления — будьте в курсе всего, что поможет вам в
+                        профессиональном развитии
+                    </p>
+                    <div class="subs__form">
+                        <input type="text" placeholder="E-mail" required name="subs-mail">
+                        <button type="submit" value=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../script/script.js"></script>
+</body>
+
+</html>

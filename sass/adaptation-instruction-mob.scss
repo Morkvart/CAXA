@@ -1,0 +1,71 @@
+@import "reset";
+@import "vars";
+@import "global-mob";
+@import "blocks/adaptation-header-mob";
+@import "blocks/adaptation-sidebar-mob.scss";
+@import "blocks/adaptation-footer";
+
+.adaptation__instruction-content {
+  .instruction-content__title {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .instruction-content__instruction {
+    margin-top: 16px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 16px;
+    max-width: none;
+    height: 85%;
+
+    .instruction__block {
+      margin-bottom: 32px;
+      max-width: none;
+      &:last-child {
+        margin-bottom: 16px;
+      }
+
+      .instruction__block-title {
+        font-weight: 700;
+        font-size: 16px;
+      }
+
+      .instruction__block-text {
+        font-weight: 500;
+        font-size: 14px;
+        color: $dark;
+        margin-top: 15px;
+        line-height: 180%;
+      }
+    }
+
+    .instruction__block-wish {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+
+    .instruction__block-btn {
+      display: flex;
+      max-width: 315px;
+      align-items: center;
+      justify-content: center;
+      height: 50px;
+
+      color: $lightblue;
+      background-color: $blue;
+      border-radius: 3px;
+      font-size: 14px;
+      font-weight: 600;
+      margin: 0 auto;
+      margin-bottom: 80px;
+      transition: background-color 0.3s;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      &:hover {
+        background-color: rgba($color: $blue, $alpha: 0.8);
+      }
+    }
+  }
+}

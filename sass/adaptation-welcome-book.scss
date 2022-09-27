@@ -1,0 +1,115 @@
+@import "reset";
+@import "vars";
+@import "global";
+@import "blocks/adaptation-header";
+@import "blocks/adaptation-sidebar";
+@import "blocks/adaptation-footer";
+
+.adaptation__welcome-book {
+  .welcome-book__btn-prev {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    color: $blue;
+    margin-bottom: 31px;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 9px;
+      height: 18px;
+      margin-right: 10px;
+      background-image: url("/images/icons/arrow-prev.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 9px 18px;
+    }
+  }
+
+  .welcome-book__title-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1022px;
+    margin-bottom: 40px;
+
+    .welcome-book__title {
+      font-size: 36px;
+      font-weight: 700;
+      padding-bottom: 16px;
+    }
+    .welcome-book__btn-edit {
+      display: inline-block;
+      color: $blue;
+      text-transform: uppercase;
+      padding: 16px 22px;
+      font-size: 14px;
+      font-weight: 600;
+      border: 1px solid $blue;
+      border-radius: 4px;
+      text-align: center;
+      letter-spacing: 0.1em;
+      transition: background-color 0.3s;
+      &:hover {
+        background-color: rgba($color: #fff, $alpha: 0.8);
+      }
+    }
+  }
+
+  .welcome-book__content {
+    max-width: 1022px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding-top: 40px;
+    padding-left: 40px;
+    margin-bottom: 50px;
+    height: 85%;
+
+    .content__video {
+      max-width: 660px;
+      max-height: 299px;
+      margin-bottom: 40px;
+      video {
+        width: 100%;
+        max-height: 299px;
+        object-fit: contain;
+        border-radius: 10px;
+      }
+    }
+
+    .content__block {
+      max-width: 735px;
+      margin-bottom: 40px;
+      &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 40px;
+      }
+      .block__title {
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+      .block__text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 180%;
+        color: $dark;
+      }
+      .block__links {
+        display: flex;
+        flex-direction: column;
+        .block__link {
+          display: inline-block;
+          font-weight: 700;
+          font-size: 14px;
+          color: $blue;
+          margin-bottom: 10px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
